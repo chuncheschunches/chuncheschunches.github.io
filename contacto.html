@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793"
+    />
+
+    <title>Chunches</title>
+
+    <!-- meta tags for SEO and social sharing -->
+    <link
+      rel="canonical"
+      href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793"
+    />
+    <meta
+      name="description"
+      content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="José Rosales" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos."
+    />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+    <style>
+      .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+          width: 100%;
+  height: 100%;
+      }
+      .form-horizontal {
+  /*float: left;
+  max-width: 400px;*/
+  font-weight: 400;
+}
+      .form-control,
+      textarea {
+        width: 300px;
+        letter-spacing: 1px;
+      }
+      
+      .form-control,
+      input {
+        width: 300px;
+        letter-spacing: 1px;
+      }
+      
+      button {
+        background: pink;
+        padding: 10px;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button
+      onclick="topFunction()"
+      id="subir"
+      title="Ir al Inicio"
+      style="display: block;"
+    >
+      ↑
+    </button>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title">
+          <div id="titulo" class="inicio">
+            <script type="text/x-handlebars-template" id="inicio-template">
+                    <div class="titulo"><a href="index.html">{{{cells.titulo}}}</a></div> <br>
+                    <div class="info">{{{cells.resumen}}}</div>
+              <div class="info"><a href="{{cells.instagram}}">instagram</a></div>
+               <div class="info"><a href="mailto:{{cells.correo}}">{{{cells.correo}}}</a></div>
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a class="pink" href="obras.html">Obras</a>
+        <a class="pink" href="cv.html">CV</a>
+        <a class="pink" href="contacto.html">Contacto</a>
+      </div>
+    </div>
+
+    <!--
+
+         
+-->
+    <br />
+    <br />
+    <main id="contacto">
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 offset-1 contact-form radius p-5">
+              <form
+                name="simple-contact-form"
+                accept-charset="utf-8"
+                action="https://formspree.io/f/mlealqlj"
+                method="post"
+                    class="form-horizontal"
+              >
+                 <div class="form-group">
+        <div class="">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      <br>
+                <button type="submit" class="btn btn-primary float-right">Enviar / Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+
+  <script>
+    setInicioLang("es");
+    $(function() {
+      let $contactForm = $(".contact-form");
+      $contactForm.on("keyup", "input, textarea", function(event) {
+        if ($(this).val().length > 0) {
+          $(this).addClass("filled");
+        } else {
+          $(this).removeClass("filled");
+        }
+      });
+    });
+  </script>
+  <script src="/script.js" defer></script>
+</html>
