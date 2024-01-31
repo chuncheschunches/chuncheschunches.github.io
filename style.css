@@ -17,10 +17,12 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
-  grid-gap: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    grid-gap: 9em;
+    align-items: center;
 }
+
 
 img {
   display: block;
