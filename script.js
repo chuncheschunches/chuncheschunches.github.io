@@ -7,6 +7,27 @@ https://www.paulpengdotcom.com/drawings/
 
 */
 
+document.addEventListener('DOMContentLoaded', function() {
+  const allLinks = document.querySelectorAll('a[href^="#"]');
+
+  allLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default jump
+
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
 var inicioURL =
   "https://docs.google.com/spreadsheets/d/1W-7eltdvP3aaDE7a5f3XIFodePRdVXVq28eogzEFEMM/edit#gid=0";
 var inicioTemplate = Handlebars.compile($("#inicio-template").html());
