@@ -94,12 +94,18 @@ var loadId = () => {
 
 
 $( window ).ready( function() {
-  console.log('windowready')
+  setTimeout(() => {
+    // Your function to execute here
+   console.log('windowready')
   $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
   contain: true
 })
 $('.main-carousel').flickity('resize')
+  }, 1000); // Delay for 1 second
+});
+
+  
 } );
 
