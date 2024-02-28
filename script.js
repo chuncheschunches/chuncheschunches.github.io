@@ -6,6 +6,16 @@ https://www.luctuymans.be/
 https://www.paulpengdotcom.com/drawings/
 
 */
+function removeParent(imageElement) {
+  // Get the parent element of the image
+  const parentElement = imageElement.parentElement;
+
+  // Check if the parent element exists
+  if (parentElement) {
+    // Remove the parent element from the DOM
+    parentElement.remove();
+  }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const allLinks = document.querySelectorAll('a[href^="#"]');
