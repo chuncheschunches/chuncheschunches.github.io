@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793"
-    />
+    <link rel="icon" href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793" />
 
     <title>Chunches</title>
 
     <!-- meta tags for SEO and social sharing -->
-    <link
-      rel="canonical"
-      href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793"
-    />
-    <meta
-      name="description"
-      content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos."
-    />
+    <link rel="canonical" href="https://cdn.glitch.com/aa59a5ca-e59d-499c-af3c-43924eb7eb89%2Ficon.png?v=1622951811793" />
+    <meta name="description" content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos." />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="José Rosales" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="" />
-    <meta
-      property="og:description"
-      content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos."
-    />
+    <meta property="og:description" content="Mi trabajo refiere a las formas en que ciertos cuerpos se caracterizan como divergentes o no totalmente constituidos, y las fuerzas y estructuras políticas que buscan normalizarlos. Me informo por la intersección entre la estética del poder y la cultura popular, a menudo apropiándome de imágenes de los medios de comunicación masivos, pornografía amateur y objetos hechos para niños, que reutilizo para hacer visible la experiencia de sectores particulares de la sociedad sujetos a violencia estructural y desigualdad. Mis proyectos tratan la reimaginación de ciertos cuerpos como sujetos políticos." />
     <meta property="og:image" content="" />
     <meta name="twitter:card" content="summary" />
 
@@ -43,13 +32,8 @@
   </head>
 
   <body>
-    <button
-      onclick="topFunction()"
-      id="subir"
-      title="Ir al Inicio"
-      style="display: block;"
-    >
-        <img id="hoja" src="hoja.svg">
+    <button onclick="topFunction()" id="subir" title="Ir al Inicio" style="display: block;">
+      <img id="hoja" src="hoja.svg">
     </button>
     <div class="nav">
       <input type="checkbox" id="nav-check" />
@@ -57,7 +41,7 @@
         <div class="nav-title">
           <div id="titulo" class="inicio">
             <script type="text/x-handlebars-template" id="inicio-template">
-                    <div class="titulo"><a href="inicio.html">{{{cells.titulo}}}</a></div> <br>
+              <div class="titulo"><a href="inicio.html">{{{cells.titulo}}}</a></div> <br>
                     <div class="info">{{{cells.resumen}}}</div>
               <div class="info"><a href="{{cells.instagram}}">instagram</a></div>
                  <div class="info"><a href="mailto:{{cells.correo}}">📧</a></div>
@@ -65,8 +49,7 @@
           </div>
           <div>
             <a class="info" href="works.html">
-              EN </a
-            ><a class="info" href="obras.html">
+              EN </a><a class="info" href="obras.html">
               ES
             </a>
           </div>
@@ -89,59 +72,61 @@
 
     <div id="obras-content" class="obrasContent">
       <script type="text/x-handlebars-template" id="obrascontent-template">
-               <div id="{{cells.id}}" class="content">
-          <div class="tituloObra">
-            <strong>{{{cells.obra}}} ({{cells.fecha}})</strong>
-          </div>
-          <br>
-          <div>
-          <p>
-            {{{cells.desc}}}
-            </p>
-          </div>
-          <br>
-          <div>
-            {{{cells.video}}}
-          </div>
-          <br>
-          <div class="image-description">
-               {{{cells.descVideo}}}
-             </div>
-           <div>
-           <br>
-           <div>
-              <a data-fancybox="{{cells.id}}" href="{{cells.img1}}" data-caption="<span class='image-description-view'>{{cells.descImg1}}</span>"><img  onerror="removeParent(this)"  alt="" src="{{{cells.img1}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg1}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox="{{cells.id}}"  href="{{cells.img2}}" data-caption="<span class='image-description-view'>{{cells.descImg2}}</span>"><img   onerror="removeParent(this)" alt="" src="{{{cells.img2}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg2}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox="{{cells.id}}"  href="{{cells.img3}}" data-caption="<span class='image-description-view'>{{cells.descImg3}}</span>"><img   onerror="removeParent(this)" alt="" src="{{{cells.img3}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg3}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox="{{cells.id}}"  href="{{cells.img4}}" data-caption="<span class='image-description-view'>{{cells.descImg4}}</span> "><img  onerror="removeParent(this)" alt="" src="{{{cells.img4}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg4}}}
-             </div>
-          </div>
-        </div>
-        <br>
+        <div id="{{cells.id}}" class="content">
+  <div class="tituloObra">
+    <strong>{{{cells.obra}}} ({{cells.fecha}})</strong>
+  </div>
+  <br>
+  <div>
+    <p>
+      {{{cells.desc}}}
+    </p>
+  </div>
+  <br>
+  <div>
+    {{{cells.video}}}
+  </div>
+  <br>
+  <div class="image-description">
+    {{{cells.descVideo}}}
+  </div>
+  <div class="main-carousel">
+    <div class="carousel-cell">
+      <br>
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img1}}" data-caption="<span class='image-description-view'>{{cells.descImg1}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img1}}}" onerror="this.style.display='none'" loading="lazy" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg1}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img2}}" data-caption="<span class='image-description-view'>{{cells.descImg2}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img2}}}" onerror="this.style.display='none'" loading="lazy" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg2}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img3}}" data-caption="<span class='image-description-view'>{{cells.descImg3}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img3}}}" onerror="this.style.display='none'" loading="lazy" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg3}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img4}}" data-caption="<span class='image-description-view'>{{cells.descImg4}}</span> "><img onerror="removeParent(this)" alt="" src="{{{cells.img4}}}" onerror="this.style.display='none'" loading="lazy" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg4}}}
+      </div>
+    </div>
+  </div>
+</div>
+<br>
       </script>
     </div>
 
@@ -149,7 +134,7 @@
   </body>
   <script>
     setInicioLang("es");
-    
+
     var obrasCompletoURL =
       "https://docs.google.com/spreadsheets/d/1W-7eltdvP3aaDE7a5f3XIFodePRdVXVq28eogzEFEMM/edit#gid=1168387216";
 
@@ -162,11 +147,10 @@
       rowTemplate: obrasContentTemplate
     });
 
-    setTimeout(function(){ loadId() }, 2000);
-     
-        
-      
-      
-    
+    setTimeout(function() {
+      loadId()
+    }, 2000);
+
   </script>
+
 </html>
