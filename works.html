@@ -90,58 +90,60 @@
     <div id="obras-content" class="obrasContent">
       <script type="text/x-handlebars-template" id="obrascontent-template">
                <div id="{{cells.id}}" class="content">
-          <div class="tituloObra">
-            <strong>{{{cells.obra}}} ({{cells.fecha}})</strong>
-          </div>
-          <br>
-          <div>
-          <p>
-            {{{cells.desc}}}
-            </p>
-          </div>
-          <br>
-          <div>
-            {{{cells.video}}}
-          </div>
-          <br>
-          <div class="image-description">
-               {{{cells.descVideo}}}
-             </div>
-           <div>
-           <br>
-           <div>
-              <a data-fancybox href="{{cells.img1}}" data-caption="<span class='image-description-view'>{{cells.descImg1}}</span>"><img alt="" src="{{{cells.img1}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg1}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox href="{{cells.img2}}" data-caption="<span class='image-description-view'>{{cells.descImg2}}</span>"><img alt="" src="{{{cells.img2}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg2}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox href="{{cells.img3}}" data-caption="<span class='image-description-view'>{{cells.descImg3}}</span>"><img alt="" src="{{{cells.img3}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg3}}}
-             </div>
-          </div>
-          <div>
-           <div>
-              <a data-fancybox href="{{cells.img4}}" data-caption="<span class='image-description-view'>{{cells.descImg4}}</span> "><img alt="" src="{{{cells.img4}}}" onerror="this.style.display='none'" loading="lazy"/></a>
-             </div>
-             <div class="image-description">
-               {{{cells.descImg4}}}
-             </div>
-          </div>
-        </div>
-        <br>
+  <div class="tituloObra">
+    <strong>{{{cells.obra}}} ({{cells.fecha}})</strong>
+  </div>
+  <br>
+  <div>
+    <p>
+      {{{cells.desc}}}
+    </p>
+  </div>
+  <br>
+  <div>
+    {{{cells.video}}}
+  </div>
+  <br>
+  <div class="image-description">
+    {{{cells.descVideo}}}
+  </div>
+  <div class="carousel main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+    <div class="carousel-cell">
+      <br>
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img1}}" data-caption="<span class='image-description-view'>{{cells.descImg1}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img1}}}" onerror="this.style.display='none'" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg1}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img2}}" data-caption="<span class='image-description-view'>{{cells.descImg2}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img2}}}" onerror="this.style.display='none'" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg2}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img3}}" data-caption="<span class='image-description-view'>{{cells.descImg3}}</span>"><img onerror="removeParent(this)" alt="" src="{{{cells.img3}}}" onerror="this.style.display='none'" /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg3}}}
+      </div>
+    </div>
+    <div class="carousel-cell">
+      <div>
+        <a data-fancybox="{{cells.id}}" href="{{cells.img4}}" data-caption="<span class='image-description-view'>{{cells.descImg4}}</span> "><img onerror="removeParent(this)" alt="" src="{{{cells.img4}}}" onerror="this.style.display='none'"  /></a>
+      </div>
+      <div class="image-description">
+        {{{cells.descImg4}}}
+      </div>
+    </div>
+  </div>
+</div>
+<br>
       </script>
     </div>
 
