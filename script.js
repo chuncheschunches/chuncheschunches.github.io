@@ -102,10 +102,8 @@ $( window ).ready( function() {
   cellAlign: 'left',
   contain: true
 })
-$('.main-carousel').flickity('resize')
   }, 1000); // Delay for 1 second
 });
 
-  
-} );
+
 
