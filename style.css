@@ -317,3 +317,7 @@ body::-webkit-scrollbar-thumb {
   margin: 30px;
   list-style-type: square;
 }
+
+#hoja {
+  width:40px;
+}
