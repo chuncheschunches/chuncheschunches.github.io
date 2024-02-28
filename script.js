@@ -92,4 +92,5 @@ var loadId = () => {
 
 }
 
+$( document ).ready( flickity('resize'); );
 
