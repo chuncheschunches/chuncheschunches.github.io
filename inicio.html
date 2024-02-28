@@ -58,7 +58,7 @@
                     <div class="titulo"><a href="inicio.html">{{{cells.titulo}}}</a></div> <br>
                     <div class="info">{{{cells.resumen}}}</div>
               <div class="info"><a href="{{cells.instagram}}">instagram</a></div>
-               <div class="info"><a href="mailto:{{cells.correo}}">{{{cells.correo}}}</a></div>
+              <div class="info"><a href="mailto:{{cells.correo}}">📧</a></div>
             </script>
           </div>
           <div>
@@ -93,7 +93,7 @@
     <br />
     <main id="obras">
       <script type="text/x-handlebars-template" id="obras-template">
-        <div><a href="obras.html#{{cells.id}}">
+        <div id="container" class="container"><a href="obras.html#{{cells.id}}">
         <img class="" id="{{cells.id}}" loading="lazy" src="{{cells.urlImagen}}" alt="{{cells.obra}}"/> 
        
         </a></div>
