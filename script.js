@@ -98,7 +98,7 @@ $( window ).ready( function() {
     // Your function to execute here
    console.log('windowready')
   $('.main-carousel').flickity({
-  freeScroll: true, wrapAround: true, autoPlay: true, prevNextButtons: false
+  freeScroll: true, wrapAround: true, autoPlay: true, prevNextButtons: false, imagesLoaded: true
 })
   }, 1000); // Delay for 1 second
 });
