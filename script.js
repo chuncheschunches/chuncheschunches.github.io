@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
+/*
 var inicioURL =
   "https://docs.google.com/spreadsheets/d/1W-7eltdvP3aaDE7a5f3XIFodePRdVXVq28eogzEFEMM/edit#gid=0";
 var inicioTemplate = Handlebars.compile($("#inicio-template").html());
@@ -51,7 +51,7 @@ var setInicioLang = lang => {
   });
 };
 
-
+*/
 
 
 var subirAlInicio = document.getElementById("subir")
