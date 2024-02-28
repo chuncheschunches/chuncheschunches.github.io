@@ -17,6 +17,8 @@ function removeParent(imageElement) {
   }
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const allLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -95,12 +97,13 @@ var loadId = () => {
 
 $( window ).ready( function() {
   setTimeout(() => {
-    // Your function to execute here
+
    console.log('windowready')
   $('.main-carousel').flickity({
-  freeScroll: true, wrapAround: true, autoPlay: true, prevNextButtons: false, imagesLoaded: true
+  freeScroll: true, contain:true, autoPlay: true, prevNextButtons: false, imagesLoaded: true
 })
-  }, 1000); // Delay for 1 second
+  }, 1000); 
+  document.addEventListener('click',function() {$('.main-carousel').flickity('resize')})
 });
 
 
