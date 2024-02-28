@@ -321,3 +321,7 @@ body::-webkit-scrollbar-thumb {
 #hoja {
   width:40px;
 }
+
+.content {
+  margin-top: 100px;
+}
