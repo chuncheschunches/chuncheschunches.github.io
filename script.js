@@ -8,7 +8,7 @@ https://www.paulpengdotcom.com/drawings/
 */
 function removeParent(imageElement) {
   // Get the parent element of the image
-  const parentElement = imageElement.parentElement.parentElement;
+  const parentElement = imageElement.parentElement.parentElement.parentElement;
 
   // Check if the parent element exists
   if (parentElement) {
