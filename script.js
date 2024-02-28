@@ -94,6 +94,7 @@ var loadId = () => {
 
 
 $( window ).ready( function() {
+  console.log('windowready')
   $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
