@@ -96,6 +96,9 @@ var loadId = () => {
 
 
 $( window ).ready( function() {
+   console.log('Not a mobile device');
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
   setTimeout(() => {
 
    console.log('windowready')
@@ -103,7 +106,8 @@ $( window ).ready( function() {
   freeScroll: true, contain:true, autoPlay: true, prevNextButtons: false, imagesLoaded: true
 })
   }, 1000); 
-  document.addEventListener('click',function() {$('.main-carousel').flickity('resize')})
+  //document.addEventListener('click',function() {$('.main-carousel').flickity('resize')})
+    }
 });
 
 
