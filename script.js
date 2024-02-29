@@ -94,7 +94,8 @@ var loadId = () => {
 
 }
 
-
+/*función para activar el slideshow si es escritorio*/
+/*
 $( window ).ready( function() {
    console.log('Not a mobile device');
   if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -109,6 +110,6 @@ $( window ).ready( function() {
   //document.addEventListener('click',function() {$('.main-carousel').flickity('resize')})
     }
 });
-
+*/
 
 
